@@ -7,14 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button color="dark" expand="full" (click)="call()">CALL</ion-button>
+  <ion-input [(ngModel)]="smsText" placeholder="Type a message here"></ion-input>
+  <ion-button color="dark" expand="full" (click)="sendSms()">SEND SMS</ion-button>
+  <ion-button color="dark" expand="full" (click)="takePicture()">TAKE PICTURE</ion-button>
+  <ion-button color="dark" expand="full" (click)="browsePicture()">BROWSE PICTURE</ion-button>
+  <img [src]="image">
 </ion-content>
