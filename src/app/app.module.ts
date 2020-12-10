@@ -12,6 +12,8 @@ import { CallNumber} from '@ionic-native/call-number/ngx';
 import { Contacts } from '@ionic-native/contacts/ngx';
 import { SMS } from '@ionic-native/sms/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { Facebook } from '@ionic-native/facebook/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +26,9 @@ import { Camera } from '@ionic-native/camera/ngx';
     CallNumber,
     Contacts,
     SMS,
-    Camera
+    Camera,
+    Geolocation,
+    Facebook
   ],
   bootstrap: [AppComponent]
 })
